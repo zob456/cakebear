@@ -5,12 +5,19 @@ I have been thinking about overcoming the barrier for allowing more diverse cand
 
 My first attempt at decreasing the barrier of entry for more diverse candidaets is to take an easy-to-learn / much more widely known language like TypeScript & create a way to compile it down to a singel executable & get it close to or as performant as Go or Rust. This will allow companies to adopt this language as a way to get more diverse candidates with less experience & knowledge without sacrificing performance or ease of deployment.
 
-###cakebear as a language
+### cakebear as a language
 * cakebear is not a new language per se but rather allows developers to write in TypeScript &amp; then compiles that code down to a single executable.
 * Performance should be close to or as good as Go & Rust
 * Fully support & keep up with TypeScript
 * Add additional typing on top of TypeScript for more precise compiling & coding
-  * base64 type out of the box rather than just `const base64: string = "some base64 string"`
+  * base64 type out of the box rather than just a string
+   * e.g. `const base64Input: base64 = "some base64 string"` `const base64Input: string = "some base64 string"`
   * More number & float typing fr more precise numering 
-    * **NOTE** this language will always still support any type that exists in TypeScript so you can always write in plain TypeScript without issue.
-We will also depricate our own custom types if TypeScript comes out with a corresponding type
+
+### Princeples of cakebear
+* always still support any type that exists in TypeScript so you can always write in plain TypeScript without issue. 
+* Depricate our own custom types if TypeScript comes out with a corresponding type
+ * e.g. We will take out our custom `base64` type if TypeScript adds it as a type 
+* Be as performant as possible without sacrificing accessibility
+* Follow the package management of Go or Rust by requiring approval by the cakebear org before being added to the platform
+* Avoid the bloat of NPM
