@@ -19,5 +19,7 @@ My first attempt at decreasing the barrier of entry for more diverse candidaets 
 * Depricate our own custom types if TypeScript comes out with a corresponding type
  * e.g. We will take out our custom `base64` type if TypeScript adds it as a type 
 * Be as performant as possible without sacrificing accessibility
-* Follow the package management of Go or Rust by requiring approval by the cakebear org before being added to the platform
+* Follow the package management of Go or Rust by requiring approval by the cakebear org (currently know as the cakebear cave as a placeholder) before being added to the platform
 * Avoid the bloat of NPM
+* Have an officially supported web framework
+ * Top 2 titles right now for framework are `frosting` & `honey`
